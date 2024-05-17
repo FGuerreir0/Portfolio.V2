@@ -17,5 +17,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/*" element={<Nomatch />} />*/}
       </Routes>
     </BrowserRouter>
-  </React.StrictMode>,
+  </React.StrictMode>
 )
