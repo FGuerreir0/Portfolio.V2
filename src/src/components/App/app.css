@@ -43,3 +43,8 @@
   }
 }
 
+@media screen and (max-width: 400px){
+  .app__content{
+    height: 85vh;
+  }
+}
