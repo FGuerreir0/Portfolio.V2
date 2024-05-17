@@ -1,0 +1,32 @@
+.footer__container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer{
+  display: flex;
+  justify-content: center;
+  color: var(--dirty-white);
+  font-size:14px;
+}
+.footer__text{
+  opacity: 0.5;
+}
+.footer__media{
+  font-size: 22px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0px 20px 0px 20px;
+  width: 150px;
+}
+
+.footer__media a{
+  color: var(--dirty-white);
+}
+
+.footer__media svg:hover{
+  cursor: pointer;
+  opacity: 0.5;
+}

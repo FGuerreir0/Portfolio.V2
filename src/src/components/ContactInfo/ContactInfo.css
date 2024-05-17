@@ -1,0 +1,49 @@
+.app_contactInfo{
+  background: var(--color-darkgray);
+  color: var(--color-grey);
+  width: 500px;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  padding: 10px 25px;
+  border-radius: 8px;
+  margin: 45px 0;
+}
+
+.app__contactInfo-icon{
+  color: var(--color-darkgray);
+  font-size: 1.8rem;
+  background: var(--color-blue);
+  padding: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 1150px){
+  .app_contactInfo{
+    width: 500px;
+    font-size: 1.2rem;
+    margin: 20px 0;
+  }
+
+  .app__contactInfo-icon{
+    font-size: 1.2rem;
+    padding: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 650px){
+  .app_contactInfo{
+    width: 90vw;
+    font-size: 14px;
+    margin: 15px 0;
+  }
+
+  .app__contactInfo-icon{
+    font-size: 1.1rem;
+    padding: 0.5rem;
+  }
+}

@@ -1,0 +1,45 @@
+.app{
+  overflow: hidden;
+  overflow-x: hidden;
+  height: 100vh;
+  
+  background-color:#111;
+  flex-direction: column;
+}
+.app__content{
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app__footer{
+  height: 5vh;
+}
+
+@media screen and (max-width: 1300px){
+  .app{
+    padding: 0 3.5em;
+  }
+}
+
+@media screen and (max-width: 990px){
+  .app{
+    padding: 0 1.5em;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .app{
+    padding: 0 1em;
+  }
+  .app_section_fill{
+    height: 100vh;
+  }
+  .app_section_small_fill{
+    padding: 10px 0px;
+  }
+  .app_section_medium_fill{
+    padding: 80px 0px;
+  }
+}
+

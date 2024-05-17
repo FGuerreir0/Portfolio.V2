@@ -1,0 +1,40 @@
+:root {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell, Droid Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Emoji, Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif;;
+  line-height: 1.5;
+  font-weight: 400;
+  --gradient-text:  linear-gradient(90deg, rgba(224, 224, 224, 0.8) 0%, rgba(231, 255, 95, 1) 100%);
+  --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
+  --color-bg: rgb(70, 70, 70);
+  --d8-color: #d9fe05;
+  --dirty-lime: rgba(231, 255, 95, 1);
+  --dirty-white: #e0e0e0;
+  --error: #ff4646;
+  --glass-effect: rgba(255, 255, 255, 0.795);
+  --color-black: ##000000;
+  --color-darkgray: #0e0e0e;
+  --color-gray: #545454;
+  --gradient-bar: radial-gradient(circle at 20% 0%, rgba(217, 255, 0, 1) 0%, rgba(182, 192, 210, 1) 0%, rgba(69, 82, 104, 1) 41%, rgba(49, 60, 83, 1) 100%);
+}
+
+*{
+  
+  box-sizing: border-box;
+}
+
+body {
+  
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle at 20% 0%, rgba(217, 255, 0, 1) 0%, rgba(182, 192, 210, 1) 0%, rgba(69, 82, 104, 1) 41%, rgba(49, 60, 83, 1) 100%);
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+

@@ -1,0 +1,29 @@
+.app__navbar-logo{
+  width: 100px;
+  margin-top:10px;
+}
+
+nav {
+  background: rgba(169, 169, 169, 0.19) !important;
+  backdrop-filter: blur(6.3px) !important;
+  -webkit-backdrop-filter: blur(6.3px) !important;
+}
+
+.mobile-alignment{
+  position: absolute;
+  right: 0;
+}
+
+.MuiListItem-gutters{
+  margin-top: 20px;
+  padding: 5px 20px;
+}
+
+.MuiListItem-gutters > a > div > div > span{
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 700px){
+
+}
