@@ -81,7 +81,7 @@
   flex-direction: row;
   margin-right: -60px;
   position: absolute;
-  bottom: 0;
+  bottom: -15px;
   right:0;
 }
 .frontface__footer p{
@@ -161,4 +161,16 @@
     padding: 3px 10px;
   }
 
+}
+
+@media screen and (max-width: 386px) {
+  .frontface__secondhalf>div>p{
+    font-size:12px;
+  }
+  .frontface__0{
+    font-size: 16px;
+  }
+  .frontface__1, .frontface__3{
+    font-size: 11px;
+  }
 }

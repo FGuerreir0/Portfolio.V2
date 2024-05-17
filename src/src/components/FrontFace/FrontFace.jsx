@@ -14,7 +14,7 @@ const FrontFace = () => {
         <div className='frontface__firsthalf'>
           <div>
             <p className='frontface__0'>Fábio Guerreiro</p>
-            <p className='frontface__1'>Full-Stack Developer @ TRADING ECONOMICS</p>
+            <p className='frontface__1'>Full-Stack Developer @ Trading Economics</p>
             <p className='frontface__3'>Sesimbra, Portugal</p>
 
           </div>
