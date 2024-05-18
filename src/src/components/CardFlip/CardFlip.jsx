@@ -15,6 +15,10 @@ const CardFlip = () => {
     }
   }
   return (
+    <div className="app__main__div">
+    <div className="app_mobile_action">
+    <p>Click me!</p>
+    </div>
     <Tilt glareEnable={true} glareMaxOpacity={0.5} glareColor="#fff" glarePosition="bottom" glareBorderRadius="20px" tiltMaxAngleX={2} tiltMaxAngleY={2}>
     <div className="card-div" >
       <div
@@ -42,6 +46,7 @@ const CardFlip = () => {
       </div>
     </div>
     </Tilt>
+    </div>
   );
 };
 

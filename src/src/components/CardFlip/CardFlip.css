@@ -46,3 +46,20 @@
   font-weight: bold;
 }
 
+.app_mobile_action{
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .app__main__div{
+    display: flex;
+    flex-direction: column;
+  }
+  .app_mobile_action{
+    display: flex;
+    color: #555;
+    font-size: 12px;
+    margin-left: 20px;
+    margin-bottom:-7px;
+  }
+}
