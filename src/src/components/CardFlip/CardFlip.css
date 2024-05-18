@@ -54,7 +54,7 @@
   .app__main__div{
     display: flex;
     flex-direction: column;
-    margin-top:-16px
+    margin-top:-30px
   }
   .app_mobile_action{
     display: flex;
