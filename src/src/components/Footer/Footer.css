@@ -8,7 +8,7 @@
 .footer{
   display: flex;
   justify-content: center;
-  color: var(--dirty-white);
+  color: var(--good-white);
   font-size:14px;
 }
 .footer__text{
