@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import './FrontFace.css'
-import me from '../../assets/me.jpg'
-import signature from '../../assets/signature.png'
+import me from '../../assets/me.webp'
+import signature from '../../assets/signature.webp'
 const FrontFace = () => {
   return (
     <div className="frontface__div">
