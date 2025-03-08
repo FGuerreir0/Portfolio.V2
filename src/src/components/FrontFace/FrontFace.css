@@ -1,3 +1,4 @@
+
 .frontface__banner {
   background-color: #f5f5f5;
   width: 100%;
@@ -94,6 +95,10 @@
   margin-top: 7px;
 }
 
+.frontface__p__mobile{
+  display: none;
+}
+
 @media screen and (max-width: 1200px) {
   .frontface__banner {
     height: 120px;
@@ -122,12 +127,16 @@
     margin:5px 5px 5px 10px;
     padding: 0px;
   }
-  .frontface__p__desktop{
-    display: none;
-  }
+
 }
 
 @media screen and (max-width: 768px) {
+  .frontface__p__desktop{
+    display: none;
+  }
+  .frontface__p__mobile{
+    display: block;
+  }
   .frontface__banner {
     height: 120px;
   }
