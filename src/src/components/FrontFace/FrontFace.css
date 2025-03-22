@@ -238,4 +238,21 @@
   .frontface__1, .frontface__3{
     font-size: 11px;
   }
+  .frontface__firsthalf{
+    padding-bottom:0;
+    margin-left: 0px;
+  }
+  .frontface__secondhalf__techs_container{
+    padding: 0px;
+    border: none;
+  }
+  .frontface__secondhalf__techs_header{
+    display: none;
+  }
+  .frontface__secondhalf{
+    gap:0.4em;
+  }
+  .frontface__secondhalf__techs{
+    font-size: 1.1em;
+  }
 }
