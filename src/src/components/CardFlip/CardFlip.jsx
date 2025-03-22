@@ -36,11 +36,7 @@ const CardFlip = () => {
           <div className="flip-card-front">
             <FrontFace />
           </div>
-
-          <div
-            className="flip-card-back"
-          >
-            
+          <div className="flip-card-back">       
           </div>
         </motion.div>
       </div>

@@ -29,7 +29,11 @@
   align-items: center;
   flex-direction: column;
 }
-
+.frontface__secondhalf__about{
+  padding-top: 10px;
+  text-align: justify;
+  width: 50%;
+}
 .frontface__firsthalf{
   display: flex;
   flex-direction: row;
@@ -42,15 +46,14 @@
 .frontface__secondhalf{
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: row;
   width: 100%;
   padding: 0px 20px;
   color: #222;
+  gap:4em;
 }
 
 .frontface__secondhalf div{
-  width: 50%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -98,8 +101,52 @@
 .frontface__p__mobile{
   display: none;
 }
+.frontface__secondhalf__techs_container{
+  position: relative;
+  border: 2px solid #22362a15;
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-right:15px;
+  width: 50%;
+}
+.frontface__secondhalf__techs_header {
+  position: absolute;
+  top: -35px;
+  left: 20px;
+  background: #F4F2EE;
+  padding: 0 10px;
+  font-weight: bold;
+  font-size:1.2em;
+  color: #22362a;
+
+}
+.frontface__secondhalf__techs{
+  display: flex;
+  align-items: center;
+  flex-direction: row !important;
+  flex-wrap: wrap;
+  font-size: 2.7em;
+  color: #22362a;
+  justify-content: space-around !important;
+}
+.frontface__secondhalf__techs svg{
+  margin:10px
+}
+
+@media screen and (max-width: 1300px) {
+  .frontface__secondhalf{
+    gap:3em;
+  }
+  .frontface__secondhalf__techs{
+    font-size: 2em;
+  }
+}
 
 @media screen and (max-width: 1200px) {
+  .frontface__secondhalf__techs{
+    font-size: 3em;
+  }
   .frontface__banner {
     height: 120px;
   }
@@ -127,10 +174,6 @@
     margin:5px 5px 5px 10px;
     padding: 0px;
   }
-
-}
-
-@media screen and (max-width: 768px) {
   .frontface__p__desktop{
     display: none;
   }
@@ -154,6 +197,7 @@
   .frontface__secondhalf{
     display: flex;
     flex-direction: column;
+    gap:2.7em;
   }
   
   .frontface__secondhalf div{
@@ -170,6 +214,18 @@
     padding: 3px 10px;
   }
 
+}
+
+@media screen and (max-width: 619px) {
+  .frontface__secondhalf__techs{
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 534px) {
+  .frontface__secondhalf__techs{
+    font-size: 1.8em;
+  }
 }
 
 @media screen and (max-width: 400px) {

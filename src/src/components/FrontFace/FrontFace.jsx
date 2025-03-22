@@ -2,6 +2,10 @@
 import './FrontFace.css'
 import me from '../../assets/me.webp'
 import signature from '../../assets/signature.webp'
+import { FaNode, FaPython, FaAws, FaDocker, FaReact, FaVuejs, FaGithub, FaCss3Alt, FaLinux } from "react-icons/fa";
+import { TbSql } from "react-icons/tb";
+import { SiMongodb, SiRedis, SiElasticsearch, SiApachekafka, SiSocketdotio } from "react-icons/si";
+
 const FrontFace = () => {
   return (
     <div className="frontface__div">
@@ -20,7 +24,7 @@ const FrontFace = () => {
           </div>
         </div>
         <div className='frontface__secondhalf'>
-          <div  className='frontface__secondhalf__about'>
+          <div className='frontface__secondhalf__about'>
             {/* Desktop */}
             
             <p className='frontface__p__desktop'>I’m a Full-Stack Developer with 4 years of experience in building and maintaining web applications. Currently working remotely at Trading Economics.</p>
@@ -31,8 +35,26 @@ const FrontFace = () => {
             <p className='frontface__p__mobile'>I’m a Full-Stack Developer with 4 years of experience in building and maintaining web applications. Currently working remotely at Trading Economics.</p>
             <p className='frontface__p__mobile'>I have experience in full-stack development, creating scalable, user-friendly solutions. With a passion for continuous learning, I quickly adapt to new technologies, efficiently tackling diverse development challenges</p>
           </div>
-          <div>
-            <p></p>
+          <div className='frontface__secondhalf__techs_container'>
+            <h2 className="frontface__secondhalf__techs_header">Developer DNA:</h2>
+            <div className='frontface__secondhalf__techs'>
+            <FaNode  title="NodeJs"/>
+            <FaPython  title="Python"/>
+            <TbSql  title="MsSql"/>
+            <SiMongodb  title="MongoDB"/>
+            <FaAws  title="Amazon Web Services"/>
+            <FaDocker  title="Docker"/>
+            <FaReact  title="React"/>
+            <FaVuejs  title="VueJs"/>
+            <FaGithub  title="Github"/>
+            <FaCss3Alt  title="CSS & relatives"/>
+            <FaLinux  title="Linux OS"/>
+            <SiRedis  title="Redis"/>
+            <SiElasticsearch  title="ElasticSearch"/>
+            <SiApachekafka  title="Apache Kafka"/>
+            <SiSocketdotio  title="Socket.io"/>
+            </div>
+
           </div>
         </div>
       </div>

@@ -11,10 +11,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <BrowserRouter>
         <Routes>
         <Route path="/" element={<App />}/>
-        {/*<Route path="/politica-de-qualidade" element={<Qualitypolicy />} />
-        <Route path="/our-solutions" element={<ServicesPage />} />
-        <Route path="/carreiras" element={<JobPage />} />
-        <Route path="/*" element={<Nomatch />} />*/}
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
