@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import './FrontFace.css'
-import me from '../../assets/me.webp'
-import signature from '../../assets/signature.webp'
+import me from '../../public/assets/me.webp'
+import signature from '../../public/assets/signature.webp'
 import { FaNode, FaPython, FaAws, FaDocker, FaReact, FaVuejs, FaGithub, FaCss3Alt, FaLinux } from "react-icons/fa";
 import { TbSql } from "react-icons/tb";
 import { SiMongodb, SiRedis, SiElasticsearch, SiApachekafka, SiSocketdotio } from "react-icons/si";
