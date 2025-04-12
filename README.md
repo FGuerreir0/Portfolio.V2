@@ -13,9 +13,10 @@ Eager to grow and improve my skills, I embrace every opportunity to learn.
 
 This portfolio is powered by Juan, my chatbot, who's also my cat. 🐱 He will help me present my skills and gives you a fun way to get to know me better! 🐾
 
-<div style="text-align: center;">
+<p align="center">
   <img src="https://github.com/FGuerreir0/Portfolio.V2/blob/main/src/src/public/assets/juan.webp" alt="Juan the Cat" width="300" height="300">
-</div>
+</p>
+
 ---
 
 ## Projects 💻
