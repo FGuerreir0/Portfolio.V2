@@ -27,7 +27,7 @@ const FrontFace = () => {
           <div className='frontface__secondhalf__about'>
             {/* Desktop */}
             
-            <p className='frontface__p__desktop'>I’m a Full-Stack Developer with 4 years of experience in building and maintaining web applications. Currently working remotely at Trading Economics.</p>
+            <p className='frontface__p__desktop'>I’m a Full-Stack Developer with 4 years of experience in building and maintaining web applications.</p>
             <p className='frontface__p__desktop'>I have a strong foundation in both front-end and back-end development, with a passion for creating scalable, user-friendly software. I’m always learning and adapting to new technologies and frameworks.</p>
             <p className='frontface__p__desktop'>I’m proficient in various programming languages and tools, which helps me tackle diverse development challenges efficiently.</p>
             
