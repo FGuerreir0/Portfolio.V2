@@ -21,7 +21,12 @@ This portfolio is powered by Juan, my chatbot, who's also my cat. 🐱 He will h
 
 ## Projects 💻
 
-Coming Soon
+### [Project 1 - ChatBot Juan](https://github.com/FGuerreir0/chatbot-juan)
+
+Description:
+ChatBot Juan is an interactive, AI-powered chatbot built to simulate conversations and assist with various tasks.
+Whether you're looking to get to know more about my skills or just want a lighthearted conversation, Juan is here to chat and make your experience more enjoyable.
+**Tech Stack**: Python, Langchain, Ollama
 
 ---
 
