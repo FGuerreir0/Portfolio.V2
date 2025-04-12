@@ -4,6 +4,7 @@ import "./app.css";
 //import Navbar from "../Navbar/Navbar";
 //import { Link } from "react-router-dom";
 import CardFlip from "../CardFlip/CardFlip";
+import Bot from "../Bot/Bot";
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <div className="app__content">
         <CardFlip />
       </div>
+      <Bot/>
       <div className="app__footer">
         <Footer/>  
       </div>
