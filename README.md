@@ -21,11 +21,20 @@ This portfolio is powered by Juan, my chatbot, who's also my cat. 🐱 He will h
 
 ## Projects 💻
 
-### [Project 1 - ChatBot Juan](https://github.com/FGuerreir0/chatbot-juan)
+### [Project 1 - DotDrop](https://github.com/FGuerreir0/dotdrop)
+A collaborative pixel-art canvas inspired by r/place. Drop you dot to conquer your space!
+
+**Tech Stack**: Vite.js, React, Canvas API, WS, Supabase
+
+🚀 Live At: [dotdropwars](https://dotdropwars.netlify.app/)
+
+
+### [Project 2 - ChatBot Juan](https://github.com/FGuerreir0/chatbot-juan)
 ChatBot Juan is an interactive, AI-powered chatbot built to simulate conversations and assist with various tasks.
 Whether you're looking to get to know more about my skills or just want a lighthearted conversation, Juan is here to chat and make your experience more enjoyable.
 
 **Tech Stack**: Python, Langchain, Ollama
+
 
 ---
 

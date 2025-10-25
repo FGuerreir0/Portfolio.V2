@@ -1,0 +1,30 @@
+.backface__banner{
+  background-color: #031D24;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+}
+
+.backface__banner > h2{
+  color: #2F5055;
+  font-size: 1.5em;
+  margin: 0;
+  padding: 20px;
+  padding-bottom: 5px;;
+  margin-left: 25px
+}
+
+.backface__subtitle {
+  color: #ddd;
+  margin: 0;
+  margin-left: 45px
+}
+
+@media screen and (max-width: 1200px) {
+  .backface__banner {
+    height: 120px;
+  }
+}

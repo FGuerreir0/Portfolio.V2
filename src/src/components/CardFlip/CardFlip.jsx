@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";
 import FrontFace from "../FrontFace/FrontFace"; 
+import BackFace from "../BackFace/BackFace"; 
 import "./CardFlip.css";
 
 const CardFlip = () => {
@@ -37,6 +38,7 @@ const CardFlip = () => {
             <FrontFace />
           </div>
           <div className="flip-card-back">       
+            <BackFace />
           </div>
         </motion.div>
       </div>

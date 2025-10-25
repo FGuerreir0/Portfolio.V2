@@ -8,7 +8,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .frontface__banner__cover{
@@ -179,9 +178,6 @@
   }
   .frontface__p__mobile{
     display: block;
-  }
-  .frontface__banner {
-    height: 120px;
   }
   .frontface__img {
     width: 120px;
