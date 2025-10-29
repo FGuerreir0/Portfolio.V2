@@ -9,7 +9,12 @@ const CardFlip = () => {
   const [isFlipped, setIsFlipped] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
 
-  function handleFlip() {
+  function handleFlip(e) {
+    console.log(e)
+    if (e.target.closest(".backface__proj__btn")) {
+      return;
+    }
+
     if (!isAnimating) {
       setIsFlipped(!isFlipped);
       setIsAnimating(true);

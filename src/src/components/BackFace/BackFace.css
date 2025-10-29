@@ -119,6 +119,10 @@
   }
   .backface__proj__btn svg{width:16px;height:16px;display:block;opacity:0.88}
 
+.backface__proj__btn:hover{
+    background:#e0e0e0;
+    box-shadow: 0 8px 20px rgba(8,12,10,0.16);
+  }
 @media screen and (max-width: 1200px) {
   .backface__banner {
     height: 120px;
