@@ -52,13 +52,17 @@
     display:flex;
     align-items:center;
     justify-content:center;
-        height: 100px;
+    height: 100px;
   }
 
   .backface__proj__preview img{
     max-width: 100%;
     max-height: 100%;
     object-fit:contain;
+  }
+
+  .twitch-logo{
+    max-height: 80% !important;
   }
   .backface__proj__body{
     padding:10px 12px 14px 12px;
