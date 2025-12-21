@@ -8,125 +8,138 @@
   flex-direction: column;
 }
 
-.backface__banner > h2{
+.backface__banner > h2 {
   color: #2F5055;
   font-size: 1.5em;
   margin: 0;
   padding: 20px;
-  padding-bottom: 5px;;
-  margin-left: 25px
+  padding-bottom: 5px;
+  margin-left: 25px;
 }
 
 .backface__subtitle {
   color: #ddd;
   margin: 0;
-  margin-left: 45px
+  margin-left: 45px;
 }
 
- .backface__projects__grid{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    gap:16px;
-    align-content:start;
-    margin-top:10px;
+.backface__projects__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  align-content: start;
+  margin-top: 10px;
+}
 
-  }
-  .backface__project__card{
-    background: linear-gradient(180deg, #385c5e0a, #3d66689a);
-    border-radius:8px;
-    border:1px solid #3d66689a;
-    overflow:hidden;
-    position:relative;
-    min-height:110px;
-    display:flex;
-    flex-direction:column;
-    transition: transform .22s cubic-bezier(.2,.9,.2,1), box-shadow .1s;
-  }
-  .backface__project__card:hover{
-    transform: translateY(-6px);
-    box-shadow: 0 18px 30px rgba(6,20,18,0.14);
-  }
+.backface__project__card {
+  background: linear-gradient(180deg, #385c5e0a, #3d66689a);
+  border-radius: 8px;
+  border: 1px solid #3d66689a;
+  overflow: hidden;
+  position: relative;
+  min-height: 110px;
+  display: flex;
+  flex-direction: column;
+  transition: transform .22s cubic-bezier(.2,.9,.2,1), box-shadow .1s;
+}
 
-  .backface__proj__preview{
-    background:linear-gradient(135deg,#e9f1ee,#f6f4f2);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    height: 100px;
-  }
+.backface__project__card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 30px rgba(6,20,18,0.14);
+}
 
-  .backface__proj__preview img{
-    max-width: 100%;
-    max-height: 100%;
-    object-fit:contain;
-  }
+.backface__proj__preview {
+  background: linear-gradient(135deg, #e9f1ee, #f6f4f2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
 
-  .twitch-logo{
-    max-height: 80% !important;
-  }
-  .backface__proj__body{
-    padding:10px 12px 14px 12px;
-    display:flex;
-    flex-direction:column;
-    gap:8px;
-  }
-  .backface__proj__title{
-    font-size:14px;
-    font-weight:600;
-    color:#1a2b24;
-    margin:0;
-  }
-  .backface__proj__stack{
-    display:flex;
-    gap:6px;
-    flex-wrap:wrap;
-  }
-  .backface__badge{
-    font-size:11px;
-    padding:4px 8px;
-    border-radius:999px;
-    background:transparent;
-    color:var(--muted);
-    border:1px solid rgba(0,0,0,0.06);
-  }
+.backface__proj__preview img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
 
-  .backface__proj__overlay{
-    position:absolute;
-    inset:0;
-    background:rgba(6,12,10,0.6);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:12px;
-    opacity:0;
-    transform:scale(.98);
-    transition:opacity .18s ease, transform .18s ease;
-    pointer-events:none;
-  }
-  .backface__project__card:hover .backface__proj__overlay{
-    opacity:1;
-    transform:none;
-    pointer-events:auto;
-  }
-  .backface__proj__btn{
-    display:inline-flex;
-    align-items:center;
-    gap:8px;
-    padding:8px 12px;
-    border-radius:6px;
-    background:rgba(255,255,255,0.95);
-    color:#0c2b21;
-    font-weight:600;
-    text-decoration:none;
-    font-size:13px;
-    box-shadow: 0 6px 16px rgba(8,12,10,0.12);
-  }
-  .backface__proj__btn svg{width:16px;height:16px;display:block;opacity:0.88}
+.twitch-logo {
+  max-height: 80% !important;
+}
 
-.backface__proj__btn:hover{
-    background:#e0e0e0;
-    box-shadow: 0 8px 20px rgba(8,12,10,0.16);
-  }
+.backface__proj__body {
+  padding: 10px 12px 14px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.backface__proj__title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a2b24;
+  margin: 0;
+}
+
+.backface__proj__stack {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.backface__badge {
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+.backface__proj__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(6, 12, 10, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  opacity: 0;
+  transform: scale(.98);
+  transition: opacity .18s ease, transform .18s ease;
+  pointer-events: none;
+}
+
+.backface__project__card:hover .backface__proj__overlay {
+  opacity: 1;
+  transform: none;
+  pointer-events: auto;
+}
+
+.backface__proj__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.95);
+  color: #0c2b21;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 13px;
+  box-shadow: 0 6px 16px rgba(8, 12, 10, 0.12);
+}
+
+.backface__proj__btn svg {
+  width: 16px;
+  height: 16px;
+  display: block;
+  opacity: 0.88;
+}
+
+.backface__proj__btn:hover {
+  background: #e0e0e0;
+  box-shadow: 0 8px 20px rgba(8, 12, 10, 0.16);
+}
 @media screen and (max-width: 1200px) {
   .backface__banner {
     height: 120px;

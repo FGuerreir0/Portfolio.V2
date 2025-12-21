@@ -1,5 +1,5 @@
 :root {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell, Droid Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Emoji, Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif;;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell, Droid Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Emoji, Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   --gradient-text:  linear-gradient(90deg, rgba(224, 224, 224, 0.8) 0%, rgba(231, 255, 95, 1) 100%);
@@ -11,19 +11,16 @@
   --good-white: #f0f0f0;
   --error: #ff4646;
   --glass-effect: rgba(255, 255, 255, 0.795);
-  --color-black: ##000000;
+  --color-black: #000000;
   --color-darkgray: #0e0e0e;
   --color-gray: #545454;
-  --gradient-bar: radial-gradient(circle at 20% 0%, rgba(217, 255, 0, 1) 0%, rgba(182, 192, 210, 1) 0%, rgba(69, 82, 104, 1) 41%, rgba(49, 60, 83, 1) 100%);
 }
 
-*{
-  
+* {
   box-sizing: border-box;
 }
 
 body {
-  
   margin: 0;
   padding: 0;
   background: radial-gradient(circle at 20% 0%, rgba(217, 255, 0, 1) 0%, rgba(182, 192, 210, 1) 0%, rgba(69, 82, 104, 1) 41%, rgba(49, 60, 83, 1) 100%);

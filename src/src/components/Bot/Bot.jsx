@@ -1,19 +1,19 @@
-import { useState,useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import "./Bot.css";
 import botIcon from "../../public/assets/juan.webp";
+import { BOT_MESSAGES, ANIMATION_CONFIG } from "../../config/constants";
 
 function Bot() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isMinimized, setIsMinimized] = useState(false);
-  // eslint-disable-next-line no-unused-vars
+
   const [showSpeech, setShowSpeech] = useState(true);
   const [messages, setMessages] = useState([
-    { sender: "bot", text: "Meow! I'm Juan, a friendly cat bot. Ready to help you get to know my awesome human!" },
+    { sender: "bot", text: BOT_MESSAGES.greeting },
   ]);
   const [input, setInput] = useState("");
   const [fadeOut, setFadeOut] = useState(false);
 
-  const handleSend = () => {
+  const handleSend = useCallback(() => {
     if (!input.trim()) return;
 
     const userMessage = { sender: "user", text: input };
@@ -23,24 +23,23 @@ function Bot() {
     setTimeout(() => {
       const botMessage = {
         sender: "bot",
-        text: `Meow!`,       
-        //text: `Meow!: "${userMessage.text}"`,
+        text: BOT_MESSAGES.fallback(userMessage.text),
       };
       setMessages((prev) => [...prev, botMessage]);
-    }, 800);
-  };
+    }, ANIMATION_CONFIG.botSpeech.responseDelay);
+  }, [input]);
 
-  const handleKeyDown = (e) => {
+  const handleKeyDown = useCallback((e) => {
     if (e.key === "Enter") {
       handleSend();
     }
-  };
+  }, [handleSend]);
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowSpeech(false);
       setFadeOut(true);
-    }, 10000);
+    }, ANIMATION_CONFIG.botSpeech.displayTime);
   
     return () => clearTimeout(timer);
   }, []);
@@ -65,18 +64,15 @@ function Bot() {
       )}
 
       {isOpen && (
-        <div className={`bot__container ${isMinimized ? "minimized" : ""}`}>
+        <div className={`bot__container`}>
           <div className="bot-header">
             <span className="bot-title">Juan</span>
             <div className="bot-controls">
-              <button onClick={() => setIsMinimized((prev) => !prev)}>
-                {isMinimized ? "🔼" : "🔽"}
-              </button>
               <button onClick={() => setIsOpen(false)}>✖️</button>
             </div>
           </div>
 
-          {!isMinimized && (
+
             <>
               <div className="chat-box">
                 {messages.map((msg, index) => (
@@ -92,11 +88,12 @@ function Bot() {
                   value={input}
                   onChange={(e) => setInput(e.target.value)}
                   onKeyDown={handleKeyDown}
+                  aria-label="Chat message input"
                 />
-                <button onClick={handleSend}>Send</button>
+                <button onClick={handleSend} aria-label="Send message">Send</button>
               </div>
             </>
-          )}
+  
         </div>
       )}
     </div>

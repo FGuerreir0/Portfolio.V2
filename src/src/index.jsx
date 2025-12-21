@@ -2,16 +2,18 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { Routes, Route } from "react-router-dom";
 import App from './components/App/App.jsx'
-//import Nomatch from "./components/Nomatch/Nomatch.jsx";
+import ErrorBoundary from './components/ErrorBoundary/ErrorBoundary.jsx'
 import { BrowserRouter } from "react-router-dom";
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <ErrorBoundary>
+      <BrowserRouter>
         <Routes>
-        <Route path="/" element={<App />}/>
-      </Routes>
-    </BrowserRouter>
+          <Route path="/" element={<App />}/>
+        </Routes>
+      </BrowserRouter>
+    </ErrorBoundary>
   </React.StrictMode>
 )

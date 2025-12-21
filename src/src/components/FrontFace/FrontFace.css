@@ -63,35 +63,38 @@
   padding: 0px;
 }
 
-.frontface__0{
+.frontface__0 {
   font-size: 24px;
   font-weight: 500;
+  margin: 0;
 }
 
-.frontface__1{
+.frontface__1 {
   font-size: 16px;
   font-weight: 400;
+  margin: 0;
 }
 
-.frontface__3{
+.frontface__3 {
   font-size: 0.8em;
-  color:#777
+  color: #777;
 }
-.frontface__footer{
+.frontface__footer {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   flex-direction: row;
   margin-right: -60px;
   position: absolute;
   bottom: -15px;
-  right:0;
+  right: 0;
 }
-.frontface__footer p{
+
+.frontface__footer p {
   font-size: 22px;
-  color:#333
+  color: #333;
 }
-.frontface__signature{
+.frontface__signature {
   width: 300px;
   margin-left: -60px;
   margin-top: 7px;

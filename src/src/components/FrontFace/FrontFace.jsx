@@ -9,20 +9,20 @@ import { SiMongodb, SiRedis, SiElasticsearch, SiApachekafka, SiSocketdotio } fro
 const FrontFace = () => {
   return (
     <div className="frontface__div">
-      <div className='frontface__banner frontface__banner__cover'>
+      <header className='frontface__banner frontface__banner__cover'>
         <div>
-          <img src={me} alt="This is me, Fabio Guerreiro!" className="frontface__img"/>
+          <img src={me} alt="Fábio Guerreiro - Full Stack Developer" className="frontface__img" loading="lazy"/>
         </div>
-      </div>
+      </header>
       <div className='frontface__content'>
-        <div className='frontface__firsthalf'>
+        <section className='frontface__firsthalf'>
           <div>
-            <p className='frontface__0'>Fábio Guerreiro</p>
-            <p className='frontface__1'>Full-Stack Developer @ Trading Economics</p>
+            <h1 className='frontface__0'>Fábio Guerreiro</h1>
+            <h2 className='frontface__1'>Full-Stack Developer @ Trading Economics</h2>
             <p className='frontface__3'>Sesimbra, Portugal</p>
 
           </div>
-        </div>
+        </section>
         <div className='frontface__secondhalf'>
           <div className='frontface__secondhalf__about'>
             {/* Desktop */}
@@ -36,8 +36,8 @@ const FrontFace = () => {
             <p className='frontface__p__mobile'>I have experience in full-stack development, creating scalable, user-friendly solutions. With a passion for continuous learning, I quickly adapt to new technologies, efficiently tackling diverse development challenges</p>
           </div>
           <div className='frontface__secondhalf__techs_container'>
-            <h2 className="frontface__secondhalf__techs_header">Developer DNA:</h2>
-            <div className='frontface__secondhalf__techs'>
+            <h3 className="frontface__secondhalf__techs_header">Developer DNA:</h3>
+            <div className='frontface__secondhalf__techs' role="list" aria-label="Technical skills">
             <FaNode  title="NodeJs"/>
             <FaPython  title="Python"/>
             <TbSql  title="MsSql"/>
@@ -58,9 +58,9 @@ const FrontFace = () => {
           </div>
         </div>
       </div>
-      <div className='frontface__footer'>
-        <p>X: </p> <img src={signature} alt="Signature" className="frontface__signature"/>
-      </div>
+      <footer className='frontface__footer'>
+        <p>X: </p> <img src={signature} alt="Fábio Guerreiro's signature" className="frontface__signature" loading="lazy"/>
+      </footer>
     </div>
   );
 };

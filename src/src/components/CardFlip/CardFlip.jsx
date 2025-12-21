@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import { motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";
 import FrontFace from "../FrontFace/FrontFace"; 
@@ -9,8 +9,7 @@ const CardFlip = () => {
   const [isFlipped, setIsFlipped] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
 
-  function handleFlip(e) {
-    console.log(e)
+  const handleFlip = useCallback((e) => {
     if (e.target.closest(".backface__proj__btn")) {
       return;
     }
@@ -19,7 +18,8 @@ const CardFlip = () => {
       setIsFlipped(!isFlipped);
       setIsAnimating(true);
     }
-  }
+  }, [isAnimating, isFlipped]);
+
   return (
     <div className="app__main__div">
     <div className="app_mobile_action">
